@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart'; // Import Provider
 import '../services/auth_service.dart'; // Import AuthService
+import 'transactions_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Index 0: Home Placeholder'), // Will be replaced by _buildHomeScreen
-    Text('Index 1: Transactions Placeholder'),
+    TransactionsPage(),
     Text('Index 2: Profile Placeholder'),
   ];
 
